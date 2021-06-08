@@ -36,20 +36,6 @@ function App() {
     setRecipes(data.hits);
     console.log(data.hits);
   }
-  /* 2nd way
-  const getRecipes = async () => {
-    const response = await fetch(`https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`);
-    const data = await response.json();
-    console.log(data)
-  }*/
-  /* 3rd way
-  async function getRecipes() {
-    const response = fetch(`https://api.edamam.com/search?q=chicken&app_id=${APP_ID}&app_key=${APP_KEY}`).then(response => {response.json()});
-  }*/
-
-  /*function updateSearch(e) {
-    setSearch(e.target.value);
-  }*/
 
   // run this when form is submitted
   function getSearch(e) {
